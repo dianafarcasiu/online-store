@@ -8,7 +8,7 @@ import Cart from "./pages/Cart";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/online-store">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
