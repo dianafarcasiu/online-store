@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Montserrat", sans-serif;
+  }
+  body {
+    @apply bg-gray-800 text-zinc-200;
+  }
+  .logo {
+    font-family: "Sacramento", cursive;
+  }
+  .wrapper {
+    @apply px-10 py-20 sm:px-32;
+  }
+  .form-input {
+    @apply text-sm rounded-lg bg-gray-300 text-gray-950 py-1 px-2 border-[1px] border-gray-500 focus:outline-none focus:shadow-lg focus:shadow-black/20 transition-all;
+  }
+}
