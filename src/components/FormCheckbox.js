@@ -1,4 +1,7 @@
-export default function Checkbox({ freeShipping, setFreeShipping }) {
+import { useDisplay } from "../contexts/ProductDisplayContext";
+
+export default function Checkbox() {
+  const { freeShipping, dispatch } = useDisplay();
   return (
     <form
       className="flex flex-col gap-2 items-center"
@@ -11,7 +14,9 @@ export default function Checkbox({ freeShipping, setFreeShipping }) {
         type="checkbox"
         className="cursor-pointer h-5 w-5 accent-purple-500"
         checked={freeShipping}
-        onChange={(e) => setFreeShipping(e.target.checked)}
+        onChange={(e) =>
+          dispatch({ type: "setFreeShipping", payload: e.target.value })
+        }
       ></input>
     </form>
   );

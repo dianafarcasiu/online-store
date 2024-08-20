@@ -1,4 +1,7 @@
-export default function Category({ category, setCategory }) {
+import { useDisplay } from "../contexts/ProductDisplayContext";
+
+export default function Category() {
+  const { category, dispatch } = useDisplay();
   return (
     <form className="flex flex-col gap-2" onSubmit={(e) => e.preventDefault()}>
       <label htmlFor="category" className="text-md">
@@ -9,7 +12,9 @@ export default function Category({ category, setCategory }) {
         id="category"
         className="form-input cursor-pointer"
         value={category}
-        onChange={(e) => setCategory(e.target.value)}
+        onChange={(e) =>
+          dispatch({ type: "setCategory", payload: e.target.value })
+        }
       >
         <option defaultValue="All">all</option>
         <option defaultValue="Bedroom">Bedroom</option>

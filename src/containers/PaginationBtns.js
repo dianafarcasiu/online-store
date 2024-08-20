@@ -1,36 +1,26 @@
 import PaginationBtn from "../components/PaginationBtn";
+import { useDisplay } from "../contexts/ProductDisplayContext";
 
-export default function PaginationBtns({
-  currentPage,
-  setCurrentPage,
-  totalPages,
-}) {
-  function goToPrevPage() {
-    setCurrentPage((currentPage) => currentPage - 1);
-  }
-  function goToNextPage() {
-    setCurrentPage((currentPage) => currentPage + 1);
-  }
-  function goToPage(pageNumber) {
-    setCurrentPage(pageNumber);
-  }
-
-  const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
+export default function PaginationBtns() {
+  const { currentPage, pageNumbers, dispatch } = useDisplay();
 
   return (
     <div className="mt-24 flex justify-end">
       <div className="flex">
         <PaginationBtn
           isPrev={true}
-          handlePagination={goToPrevPage}
-          currentPage={currentPage}
+          handlePagination={() =>
+            dispatch({ type: "setPage", payload: currentPage - 1 })
+          }
         >
           Prev
         </PaginationBtn>
 
         {pageNumbers.map((pageNumber) => (
           <PaginationBtn
-            handlePagination={() => goToPage(pageNumber)}
+            handlePagination={() =>
+              dispatch({ type: "setPage", payload: pageNumber })
+            }
             isCurrent={currentPage === pageNumber}
             key={pageNumber}
           >
@@ -40,9 +30,9 @@ export default function PaginationBtns({
 
         <PaginationBtn
           isNext={true}
-          handlePagination={goToNextPage}
-          currentPage={currentPage}
-          totalPages={totalPages}
+          handlePagination={() =>
+            dispatch({ type: "setPage", payload: currentPage + 1 })
+          }
         >
           Next
         </PaginationBtn>

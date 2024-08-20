@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
+import { useDisplay } from "../contexts/ProductDisplayContext";
 
-export default function ProductGrid({ products, displayGrid = true }) {
+export default function ProductGrid({ products }) {
+  const { displayGrid } = useDisplay();
   return (
     <div
       className={`grid gap-5 ${

@@ -1,12 +1,13 @@
+import { useDisplay } from "../contexts/ProductDisplayContext";
+
 export default function PaginationBtn({
   children,
   isPrev,
   isNext,
   handlePagination,
-  currentPage,
   isCurrent,
-  totalPages,
 }) {
+  const { currentPage, totalPages } = useDisplay();
   return (
     <button
       className={`py-3 px-4 text-sm md:text-base font-bold hover:bg-gray-950 disabled:bg-gray-900/50 transition-colors ${

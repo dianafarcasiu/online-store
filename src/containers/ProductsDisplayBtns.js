@@ -1,23 +1,19 @@
 import DisplayBtn from "../components/DisplayBtn";
+import { useDisplay } from "../contexts/ProductDisplayContext";
 
-export default function ProductsDisplayBtns({ displayGrid, setDisplayGrid }) {
-  function gridDisplay() {
-    setDisplayGrid(true);
-  }
-  function lineDisplay() {
-    setDisplayGrid(false);
-  }
+export default function ProductsDisplayBtns() {
+  const { displayGrid, dispatch } = useDisplay();
 
   return (
     <div className="flex justify-center">
       <DisplayBtn
         icon="fa-solid fa-grip"
-        handleDisplay={gridDisplay}
+        handleDisplay={() => dispatch({ type: "setDisplay", payload: true })}
         active={displayGrid}
       />
       <DisplayBtn
         icon="fa-solid fa-grip-lines"
-        handleDisplay={lineDisplay}
+        handleDisplay={() => dispatch({ type: "setDisplay", payload: false })}
         active={!displayGrid}
       />
     </div>
