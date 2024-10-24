@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import CartAmount from "./CartAmount";
 import Underline from "../../ui/Underline";
 import { Link } from "react-router-dom";
