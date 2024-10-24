@@ -1,4 +1,4 @@
-import CarouselPic from "../components/CarouselPic";
+import CarouselPic from "./CarouselPic";
 
 export default function Carousel() {
   return (

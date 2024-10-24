@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import productData from "../data/productData";
-import ProductInfo from "../containers/ProductInfo";
-import AddToCartBtn from "../components/AddToCartBtn";
+import ProductInfo from "../features/products/ProductInfo";
+import AddToCartBtn from "../features/cart/AddToCartBtn";
 
 export default function ProductDetails() {
   const { productID } = useParams();
@@ -9,7 +9,7 @@ export default function ProductDetails() {
 
   return (
     <div className="wrapper">
-      <div className="grid gap-12 md:grid-cols-2 md:gap-6 mt-10">
+      <div className="grid gap-12 mt-10 md:grid-cols-2 md:gap-6">
         <img
           src={product.image}
           alt={product.title}

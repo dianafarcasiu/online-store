@@ -1,15 +1,18 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./containers/Navbar";
-import Home from "./pages/Home";
+import { DisplayProvider } from "./contexts/ProductDisplayContext";
+
+import Home from "./ui/Home";
 import About from "./pages/About";
 import Products from "./pages/Products";
 import ProductDetails from "./pages/ProductDetails";
 import Cart from "./pages/Cart";
-import { DisplayProvider } from "./contexts/ProductDisplayContext";
+import CartSyncToLocalStorage from "./features/cart/CartSyncToLocalStorage";
+import Navbar from "./ui/Navbar";
 
 function App() {
   return (
     <BrowserRouter basename="/online-store">
+      <CartSyncToLocalStorage />
       <Navbar />
       <DisplayProvider>
         <Routes>

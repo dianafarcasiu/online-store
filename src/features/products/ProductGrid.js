@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import ProductCard from "../components/ProductCard";
-import { useDisplay } from "../contexts/ProductDisplayContext";
+import { useDisplay } from "../../contexts/ProductDisplayContext";
+import ProductCard from "./ProductCard";
 
 export default function ProductGrid({ products }) {
   const { displayGrid } = useDisplay();

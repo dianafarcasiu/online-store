@@ -1,5 +1,5 @@
 import { useState } from "react";
-import NavPage from "../components/NavPage";
+import NavPage from "./NavPage";
 import { NavLink } from "react-router-dom";
 
 export default function NavPages() {

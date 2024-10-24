@@ -1,7 +1,7 @@
-import AboutDescription from "../components/AboutDescription";
-import AboutTitle from "../components/AboutTitle";
-import Underline from "../components/Underline";
-import AboutStatements from "../containers/AboutStatements";
+import AboutDescription from "../ui/AboutDescription";
+import AboutTitle from "../ui/AboutTitle";
+import Underline from "../ui/Underline";
+import AboutStatements from "../ui/AboutStatements";
 import statements from "../data/statements";
 
 export default function About() {
@@ -12,7 +12,7 @@ export default function About() {
         <AboutDescription />
         <Underline />
 
-        <h3 className="text-lg text-center font-bold pb-14 sm:text-2xl">
+        <h3 className="text-lg font-bold text-center pb-14 sm:text-2xl">
           Carefully selected for you.
         </h3>
 

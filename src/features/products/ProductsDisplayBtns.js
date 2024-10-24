@@ -1,5 +1,5 @@
-import DisplayBtn from "../components/DisplayBtn";
-import { useDisplay } from "../contexts/ProductDisplayContext";
+import DisplayBtn from "./DisplayBtn";
+import { useDisplay } from "../../contexts/ProductDisplayContext";
 
 export default function ProductsDisplayBtns() {
   const { displayGrid, dispatch } = useDisplay();

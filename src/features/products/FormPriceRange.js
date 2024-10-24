@@ -1,4 +1,4 @@
-import { useDisplay } from "../contexts/ProductDisplayContext";
+import { useDisplay } from "../../contexts/ProductDisplayContext";
 
 export default function PriceRange() {
   const { maxPrice, dispatch } = useDisplay();

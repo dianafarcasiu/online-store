@@ -1,8 +1,8 @@
-import Underline from "../components/Underline";
-import PaginationBtns from "../containers/PaginationBtns";
-import ProductGrid from "../containers/ProductGrid";
-import ProductsDisplayBtns from "../containers/ProductsDisplayBtns";
-import ProductFilters from "../containers/ProductFilters";
+import Underline from "../ui/Underline";
+import PaginationBtns from "../features/products/PaginationBtns";
+import ProductGrid from "../features/products/ProductGrid";
+import ProductsDisplayBtns from "../features/products/ProductsDisplayBtns";
+import ProductFilters from "../features/products/ProductFilters";
 import { useDisplay } from "../contexts/ProductDisplayContext";
 
 export default function Products() {

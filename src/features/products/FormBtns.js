@@ -1,5 +1,5 @@
-import FormBtn from "../components/FormBtn";
-import { useDisplay } from "../contexts/ProductDisplayContext";
+import FormBtn from "./FormBtn";
+import { useDisplay } from "../../contexts/ProductDisplayContext";
 
 export default function FormBtns() {
   const { dispatch } = useDisplay();

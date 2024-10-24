@@ -1,9 +1,9 @@
-import Underline from "../components/Underline";
-import Carousel from "../containers/Carousel";
-import Header from "../containers/Header";
-import ProductGrid from "../containers/ProductGrid";
+import ProductGrid from "../features/products/ProductGrid";
 import productData from "../data/productData";
 import shuffleArray from "../helpers/shuffleArray";
+import Header from "./Header";
+import Carousel from "./Carousel";
+import Underline from "./Underline";
 
 export default function Home() {
   const randomProducts = shuffleArray([...productData]).slice(0, 3);
@@ -15,7 +15,7 @@ export default function Home() {
         <Carousel />
       </div>
 
-      <h3 className="font-bold text-2xl mb-4">Popular Products</h3>
+      <h3 className="mb-4 text-2xl font-bold">Popular Products</h3>
       <Underline />
 
       <ProductGrid products={randomProducts} />

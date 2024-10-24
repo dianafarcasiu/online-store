@@ -1,4 +1,4 @@
-import Logo from "../components/Logo";
+import Logo from "./Logo";
 import NavPages from "./NavPages";
 
 export default function Navbar() {

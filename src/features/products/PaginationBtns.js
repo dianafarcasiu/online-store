@@ -1,11 +1,11 @@
-import PaginationBtn from "../components/PaginationBtn";
-import { useDisplay } from "../contexts/ProductDisplayContext";
+import PaginationBtn from "./PaginationBtn";
+import { useDisplay } from "../../contexts/ProductDisplayContext";
 
 export default function PaginationBtns() {
   const { currentPage, pageNumbers, dispatch } = useDisplay();
 
   return (
-    <div className="mt-24 flex justify-end">
+    <div className="flex justify-end mt-24">
       <div className="flex">
         <PaginationBtn
           isPrev={true}

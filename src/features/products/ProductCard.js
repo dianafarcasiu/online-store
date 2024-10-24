@@ -15,7 +15,7 @@ export default function ProductCard({ product, displayGrid }) {
         }`}
       />
       <div className={`pb-2 ${displayGrid ? "pt-8" : "text-start pt-0"}`}>
-        <h4 className="text-md sm:text-lg font-bold pb-3">{product.title}</h4>
+        <h4 className="pb-3 font-bold text-md sm:text-lg">{product.title}</h4>
         <p className="text-sm font-bold text-purple-400">{`$ ${product.price}`}</p>
       </div>
     </div>

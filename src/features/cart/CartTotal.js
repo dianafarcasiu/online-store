@@ -1,10 +1,14 @@
-import Underline from "../components/Underline";
+import { useSelector } from "react-redux";
+import { getShippingPrice, getTotalCartPrice } from "./cartSlice";
+import Underline from "../../ui/Underline";
 
-export default function CartTotal({ totalPrice, shippingPrice }) {
-  const totalOrder = shippingPrice + parseFloat(totalPrice, 2);
+export default function CartTotal() {
+  const totalPrice = useSelector(getTotalCartPrice).toFixed(2);
+  const shippingPrice = useSelector(getShippingPrice).toFixed(2);
+  const totalOrder = parseFloat(totalPrice) + parseFloat(shippingPrice);
 
   return (
-    <div className="bg-gray-950 rounded-lg p-10 text-sm">
+    <div className="p-10 text-sm rounded-lg bg-gray-950">
       <div className="flex justify-between mb-2">
         <span>Subtotal</span>
         <span>{`$ ${totalPrice}`}</span>
@@ -13,7 +17,7 @@ export default function CartTotal({ totalPrice, shippingPrice }) {
 
       <div className="flex justify-between mb-2">
         <span>Shipping</span>
-        <span>{`$ ${shippingPrice.toFixed(2)}`}</span>
+        <span>{`$ ${shippingPrice}`}</span>
       </div>
       <Underline marginBottom="mb-10" />
 

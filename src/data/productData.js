@@ -9,7 +9,6 @@ const productData = [
     image:
       "https://www.roomservice360.com/media/catalog/product/i/n/infinity-coffee-table-01_1.jpg",
     free_shipping: true,
-    amount: 1,
   },
   {
     id: 2,
@@ -21,7 +20,6 @@ const productData = [
     image:
       "https://i5.walmartimages.com/asr/5be308c7-4cfd-4509-83aa-47646ff6355d.38f798e857b038f6f5f6f5b3f1ae9b7d.jpeg",
     free_shipping: false,
-    amount: 1,
   },
   {
     id: 3,
@@ -33,7 +31,6 @@ const productData = [
     image:
       "https://www.jiomart.com/images/product/original/rv48cqzbp1/renhomz-ceramic-dinner-set-set-of-19-pieces-seashell-grey-green-design-6-dinner-plates-12-bowls-1-serving-bowl-lead-and-cadmium-free-100-food-grade-19-product-images-orv48cqzbp1-p594767605-2-202210220432.jpg",
     free_shipping: true,
-    amount: 1,
   },
   {
     id: 4,
@@ -45,7 +42,6 @@ const productData = [
     image:
       "https://m.media-amazon.com/images/I/91xDzd5TQFL._AC_UF894,1000_QL80_.jpg",
     free_shipping: false,
-    amount: 1,
   },
   {
     id: 5,
@@ -57,7 +53,6 @@ const productData = [
     image:
       "https://images.thdstatic.com/productImages/d9d1b0bd-3e5f-4d45-bf31-afe25295d56b/svn/brielle-home-throw-pillows-807000281527-44_600.jpg",
     free_shipping: true,
-    amount: 1,
   },
 
   {
@@ -70,7 +65,6 @@ const productData = [
     image:
       "https://i5.walmartimages.com/seo/Bonzy-Home-Mid-Century-Modern-Accent-Chair-Single-Fabric-Lounge-Reading-Armchair-Solid-Wood-Frame-Easy-Assembly-Arm-Chairs-Living-Room-GREEN_3803425f-8096-432e-9f81-a62ad0984ecd.0990f2b6b7a7e9441dfc48317646f0b4.jpeg",
     free_shipping: false,
-    amount: 1,
   },
   {
     id: 7,
@@ -82,7 +76,6 @@ const productData = [
     image:
       "https://m.media-amazon.com/images/I/71IyCClkbES._AC_UF894,1000_QL80_DpWeblab_.jpg",
     free_shipping: true,
-    amount: 1,
   },
   {
     id: 8,
@@ -94,7 +87,6 @@ const productData = [
     image:
       "https://www.csstudios.co.nz/cdn/shop/products/SET4_Oslo_Kobe_Stockholm_Origami_Vert3.jpg?v=1669192476",
     free_shipping: true,
-    amount: 1,
   },
   {
     id: 9,
@@ -106,7 +98,6 @@ const productData = [
     image:
       "https://i5.walmartimages.com/seo/FETCOI-Modern-Design-LED-Ceiling-Lights-Dimmable-Pendant-Lighting-Remote-Control-Contemporary-Hanging-Light-Fixture-Dining-Room-Kitchen-Island-Living_988b6eb4-4c85-4beb-a490-884022b49448.79a482c3dd63f6d1094eb56c4868bf7d.jpeg",
     free_shipping: false,
-    amount: 1,
   },
   {
     id: 10,
@@ -118,7 +109,6 @@ const productData = [
     image:
       "https://ae01.alicdn.com/kf/Sf79d4b4f128248bea6d54beddc717d2fY/Modern-Luxury-Digital-Printing-Bedding-Set-300TC-Cotton-Soft-Bed-Sheet-Pillowcases-Duvet-Cover-4Pcs-Queen.jpg",
     free_shipping: true,
-    amount: 1,
   },
   {
     id: 11,
@@ -128,9 +118,8 @@ const productData = [
     description:
       "Keep your spices organized and easily accessible with this wooden spice rack organizer. Perfect for saving space and adding style to your kitchen.",
     image:
-      "https://www.bigw.com.au/medias/sys_master/images/images/h24/h9f/48465529012254.jpg",
+      "https://i.etsystatic.com/12852500/r/il/47f399/1898240812/il_570xN.1898240812_ceu2.jpg",
     free_shipping: true,
-    amount: 1,
   },
   {
     id: 12,
@@ -142,7 +131,6 @@ const productData = [
     image:
       "https://kotart.in/cdn/shop/products/Kotart-Modern-Abstract-Art-Canvas-Paintings-for-Home-and-Office-Wall-Decor-Living-room-Bedroom-Wall-Decor-Paintings-4.jpg?v=1697553852&width=1946",
     free_shipping: false,
-    amount: 1,
   },
   {
     id: 13,
@@ -152,9 +140,8 @@ const productData = [
     description:
       "Illuminate your bedside with this special bedside lamp. Featuring a natural look and dimmable light settings, it's perfect for reading or creating a cozy ambiance.",
     image:
-      "https://www.amoslighting.co.uk/wp-content/uploads/2023/08/Drisana-Mango-Wood-Bedside-Table-Lamp-DL0301-Natural-One-Size-1.jpg",
+      "https://amoslighting.co.uk/cdn/shop/files/nkuku-drisana-mango-wood-bedside-table-lamp-amos-lighting-home-3.jpg",
     free_shipping: true,
-    amount: 1,
   },
   {
     id: 14,
@@ -165,7 +152,6 @@ const productData = [
       "Keep your bedside essentials organized and within reach with this wooden nightstand featuring a drawer. With its classic design and sturdy construction, it's perfect for any bedroom decor.",
     image: "https://m.media-amazon.com/images/I/8133kASk6AL.jpg",
     free_shipping: true,
-    amount: 1,
   },
   {
     id: 15,
@@ -177,7 +163,6 @@ const productData = [
     image:
       "https://media.karousell.com/media/photos/products/2023/6/25/italian_style_leather_sofa_1687696915_39d0f261.jpg",
     free_shipping: false,
-    amount: 1,
   },
   {
     id: 16,
@@ -187,9 +172,8 @@ const productData = [
     description:
       "Upgrade your kitchen arsenal with this stainless steel knife set. Includes all the essential knives you need for slicing, dicing, and chopping.",
     image:
-      "https://www.cuisinart.com/globalassets/cuisinart-image-feed/c77ss-15pga/c77ss_15pga_1.jpg",
+      "https://www.klausmeyerknife.com/cdn/shop/files/7pcs_5c866ebb-3365-49f9-832d-874fad25261b.jpg",
     free_shipping: true,
-    amount: 1,
   },
   {
     id: 17,
@@ -201,7 +185,6 @@ const productData = [
     image:
       "https://warmlyhome.com/wp-content/uploads/2021/08/vine-flower-rug-5.jpg",
     free_shipping: false,
-    amount: 1,
   },
   {
     id: 18,
@@ -213,7 +196,6 @@ const productData = [
     image:
       "https://m.media-amazon.com/images/I/71J1aVPFyyL._AC_UF894,1000_QL80_.jpg",
     free_shipping: true,
-    amount: 1,
   },
   {
     id: 19,
@@ -225,7 +207,6 @@ const productData = [
     image:
       "https://i.etsystatic.com/43722341/r/il/f198e7/4920360682/il_570xN.4920360682_9qcz.jpg",
     free_shipping: true,
-    amount: 1,
   },
   {
     id: 20,
@@ -237,7 +218,6 @@ const productData = [
     image:
       "https://www.kitchenstuffplus.com/media/catalog/product/7/5/75044_ksp-cut-board-w-silicone-s-2_211223162111132_t9rcnwczzvprmwpn.jpg",
     free_shipping: true,
-    amount: 1,
   },
   {
     id: 21,
@@ -249,7 +229,6 @@ const productData = [
     image:
       "https://image.made-in-china.com/2f0j00dGektUchhmug/Soft-Warm-Throw-Blanket-for-Couch-Cozy-Knit-Throw-for-Bed-Sofa-Living-Room-Lightweight-Decorative-Throw-Blanket.webp",
     free_shipping: false,
-    amount: 1,
   },
   {
     id: 22,
@@ -261,7 +240,6 @@ const productData = [
     image:
       "https://i5.walmartimages.com/asr/e7767359-4f1a-4e40-a73e-367ecc622b0f.bfef3127ec711db740eec42a3965038d.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
     free_shipping: true,
-    amount: 1,
   },
   {
     id: 23,
@@ -273,7 +251,6 @@ const productData = [
     image:
       "https://m.media-amazon.com/images/I/81vUvV3vKaL._AC_UF894,1000_QL80_.jpg",
     free_shipping: false,
-    amount: 1,
   },
   {
     id: 24,
@@ -284,7 +261,6 @@ const productData = [
       "Protect your furniture in style with this marble coaster set. Featuring a sleek design and non-slip backing, they're perfect for use with hot or cold drinks.",
     image: "https://wallmantra.com/wp-content/uploads/02.jpg",
     free_shipping: true,
-    amount: 1,
   },
   {
     id: 25,
@@ -295,7 +271,6 @@ const productData = [
       "Add depth and dimension to your living space with this set of 3 decorative wall mirrors. Featuring unique shapes and finishes, they're perfect for creating an eye-catching focal point on any wall.",
     image: "https://m.media-amazon.com/images/I/71wK5iDPuaL.jpg",
     free_shipping: true,
-    amount: 1,
   },
 ];
 

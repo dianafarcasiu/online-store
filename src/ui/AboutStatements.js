@@ -1,4 +1,4 @@
-import StatementCard from "../components/StatementCard";
+import StatementCard from "./StatementCard";
 
 export default function AboutStatements({ statements }) {
   return (
