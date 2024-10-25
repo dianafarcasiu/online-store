@@ -1,9 +1,13 @@
 import { useState } from "react";
 import NavPage from "./NavPage";
 import { NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { getTotalCartQuantity } from "../features/cart/cartSlice";
 
 export default function NavPages() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const cart = useSelector((state) => state.cart.cart);
+  const totalCartAmount = useSelector(getTotalCartQuantity);
 
   function toggleMenu() {
     setMenuOpen((menuOpen) => !menuOpen);
@@ -11,10 +15,10 @@ export default function NavPages() {
 
   return (
     <>
-      <div className="cursor-pointer sm:hidden p-2" onClick={toggleMenu}>
-        <div className="h-1 w-8 bg-zinc-200 rounded-full mb-1"></div>
-        <div className="h-1 w-8 bg-zinc-200 rounded-full mb-1"></div>
-        <div className="h-1 w-8 bg-zinc-200 rounded-full mb-1"></div>
+      <div className="p-2 cursor-pointer sm:hidden" onClick={toggleMenu}>
+        <div className="w-8 h-1 mb-1 rounded-full bg-zinc-200"></div>
+        <div className="w-8 h-1 mb-1 rounded-full bg-zinc-200"></div>
+        <div className="w-8 h-1 mb-1 rounded-full bg-zinc-200"></div>
       </div>
 
       <ul
@@ -33,6 +37,11 @@ export default function NavPages() {
           <NavPage>Products</NavPage>
         </NavLink>
         <NavLink to="/cart">
+          {cart.length > 0 && (
+            <div className="absolute z-10 flex items-center justify-center w-5 h-5 p-1 text-xs font-bold bg-purple-500 rounded-full right-6 top-3">
+              {totalCartAmount}
+            </div>
+          )}
           <NavPage>Cart</NavPage>
         </NavLink>
       </ul>

@@ -1,7 +1,7 @@
-import AboutDescription from "../ui/AboutDescription";
-import AboutTitle from "../ui/AboutTitle";
-import Underline from "../ui/Underline";
-import AboutStatements from "../ui/AboutStatements";
+import AboutDescription from "./AboutDescription";
+import AboutTitle from "./AboutTitle";
+import Underline from "./Underline";
+import AboutStatements from "./AboutStatements";
 import statements from "../data/statements";
 
 export default function About() {

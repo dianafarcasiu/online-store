@@ -1,8 +1,10 @@
-import Underline from "../ui/Underline";
-import CartProduct from "../features/cart/CartProduct";
-import CartTotal from "../features/cart/CartTotal";
+import Underline from "../../ui/Underline";
+import CartProduct from "./CartProduct";
+import CartTotal from "./CartTotal";
 import { useDispatch, useSelector } from "react-redux";
-import { clearCart } from "../features/cart/cartSlice";
+import { clearCart } from "./cartSlice";
+import { Link } from "react-router-dom";
+import Title from "../../ui/Title";
 
 export default function Cart() {
   const cart = useSelector((state) => state.cart.cart);
@@ -10,10 +12,14 @@ export default function Cart() {
 
   return (
     <div className="wrapper">
-      <h5 className="mb-4 text-3xl font-bold">
-        {cart.length > 0 ? "Your cart" : "Your cart is empty"}
-      </h5>
-      <Underline />
+      <Title>{cart.length > 0 ? "Your cart" : "Your cart is empty"}</Title>
+
+      {!cart.length && (
+        <p className="font-semibold">
+          Start adding some products to your cart!
+        </p>
+      )}
+
       <div className="grid gap-12 lg:grid-cols-6">
         <div className="lg:col-span-4">
           {cart.map((product) => (
@@ -26,9 +32,11 @@ export default function Cart() {
             <div className="sticky top-56">
               <CartTotal />
 
-              <button className="w-full p-1 mt-6 transition-colors bg-purple-500 rounded-md hover:bg-purple-600 active:scale-95">
-                Order now
-              </button>
+              <Link to="/order">
+                <button className="w-full p-1 mt-6 transition-colors bg-purple-500 rounded-md hover:bg-purple-600 active:scale-95">
+                  Order now
+                </button>
+              </Link>
               <button
                 className="w-full p-1 mt-6 transition-colors bg-gray-700 rounded-md hover:bg-gray-900 active:scale-95"
                 onClick={() => dispatch(clearCart())}

@@ -1,9 +1,9 @@
-import Underline from "../ui/Underline";
-import PaginationBtns from "../features/products/PaginationBtns";
-import ProductGrid from "../features/products/ProductGrid";
-import ProductsDisplayBtns from "../features/products/ProductsDisplayBtns";
-import ProductFilters from "../features/products/ProductFilters";
-import { useDisplay } from "../contexts/ProductDisplayContext";
+import Underline from "../../ui/Underline";
+import PaginationBtns from "./PaginationBtns";
+import ProductGrid from "./ProductGrid";
+import ProductsDisplayBtns from "./ProductsDisplayBtns";
+import ProductFilters from "./ProductFilters";
+import { useDisplay } from "../../contexts/ProductDisplayContext";
 
 export default function Products() {
   const { products, firstProductIndex, lastProductIndex } = useDisplay();

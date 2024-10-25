@@ -43,6 +43,9 @@ export const { addItem, deleteItem, updateItemAmount, clearCart } =
 export const getTotalCartPrice = (state) =>
   state.cart.cart.reduce((sum, item) => sum + item.totalPrice, 0);
 
+export const getTotalCartQuantity = (state) =>
+  state.cart.cart.reduce((sum, item) => sum + item.amount, 0);
+
 export const getShippingPrice = (state) => {
   const needsShipping = state.cart.cart.some((item) => !item.free_shipping);
   return needsShipping ? 15 : 0;

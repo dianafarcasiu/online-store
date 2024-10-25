@@ -2,12 +2,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { DisplayProvider } from "./contexts/ProductDisplayContext";
 
 import Home from "./ui/Home";
-import About from "./pages/About";
-import Products from "./pages/Products";
-import ProductDetails from "./pages/ProductDetails";
-import Cart from "./pages/Cart";
+import About from "./ui/About";
+import Products from "./features/products/Products";
+import ProductDetails from "./features/products/ProductDetails";
+import Cart from "./features/cart/Cart";
 import CartSyncToLocalStorage from "./features/cart/CartSyncToLocalStorage";
 import Navbar from "./ui/Navbar";
+import Order from "./features/order/Order";
+import OrderCompleted from "./features/order/OrderCompleted";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
 
           <Route path="/products/:productID" element={<ProductDetails />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/order" element={<Order />} />
+          <Route path="/order/completed" element={<OrderCompleted />} />
         </Routes>
       </DisplayProvider>
     </BrowserRouter>
